@@ -1,0 +1,28 @@
+1- Criar consulta Nula
+
+	2- Inicio do código:
+	=List.Min(consulta1[Coluna] & consulta2[Coluna])
+	Enter
+
+		3- List.Max(consulta1[Coluna] & consulta2[Coluna])
+		Enter
+
+			4-Renomear "Etapas":
+			Acerssar o editor avançado, na aba "Página Inicial" no PowerQuery
+			Concluir
+
+				5- Duração de dias:
+				= Duration.Days(DataMax - DataMin) +1
+
+					Renomear Etapa (QtdeDias)
+
+
+						6- Gerar a lista de datas
+						= List.Dates(DataMin, QtdeDias, #duration(1,0,0,0))
+							Lógica: #duration(quantidade de dias,horas,segundos)
+
+								Renomear a etapa (ListaDatas)
+
+									7- Gerar colunas especificas com as categorização que desejar
+
+										Colocar as colunas com os números especificos para poder organizar com referencia no número.
